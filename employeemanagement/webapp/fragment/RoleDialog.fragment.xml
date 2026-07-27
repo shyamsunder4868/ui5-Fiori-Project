@@ -1,0 +1,40 @@
+<core:FragmentDefinition 
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog 
+        id="roleDialog" 
+        title="Employee ID" 
+        resizable="true">
+
+        <content>
+            <VBox class="sapUiSmallMargin">
+                
+                <Text text="Enter Your ID"/>
+
+                <Input 
+                    id="idEmployeeInput" 
+                    width="100%" 
+                    placeholder="" 
+                    type="Number"/>
+                    
+            </VBox>
+        </content>
+
+        <!-- OK Button -->
+        <beginButton>
+            <Button 
+                text="{i18n>ok}" 
+                press="onRoleConfirm"/>
+        </beginButton>
+
+        <!-- Cancel Button -->
+        <endButton>
+            <Button 
+                text="{i18n>cancel}" 
+                press="onRoleCancel"/>
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>

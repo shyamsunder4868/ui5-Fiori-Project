@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": "101",
+      "name": "Shyam",
+      "city": "Hyderabad",
+      "salary": "50000",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "id": "102",
+      "name": "Ravi",
+      "city": "Bangalore",
+      "salary": "40000",
+      "status": "Inactive",
+      "role": "Employee"
+    },
+    {
+      "id": "103",
+      "name": "Anjali",
+      "city": "Mumbai",
+      "salary": "60000",
+      "status": "Active",
+      "role": "Employee"
+    }
+  ]
+}
