@@ -1,0 +1,47 @@
+<core:FragmentDefinition 
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:m="sap.m">
+
+    <m:Dialog id="employeeDialog" title="{i18n>employeeDetails}">
+
+        <m:content>
+            <m:VBox class="sapUiSmallMargin">
+
+                <m:Label text="{i18n>id}" required="true"/>
+                <m:Input id="idInput" value="{dialog>/id}"/>
+
+                <m:Label text="{i18n>name}" required="true"/>
+                <m:Input id="idNameInput" value="{dialog>/name}" liveChange="onFieldLiveChange"/>
+
+                <m:Label text="{i18n>city}" required="true"/>
+                <m:Input id="idCityInput" value="{dialog>/city}" liveChange="onFieldLiveChange"/>
+
+                <m:Label text="{i18n>salary}" required="true"/>
+                <m:Input id="idSalaryInput" value="{dialog>/salary}" liveChange="onFieldLiveChange"/>
+
+                <m:Label text="{i18n>status}" required="true"/>
+                <m:ComboBox id="idStatusInput" selectedKey="{dialog>/status}" width="100%">
+                    <core:Item key="Active" text="{i18n>active}"/>
+                    <core:Item key="Inactive" text="{i18n>inactive}"/>
+                </m:ComboBox>
+
+                <m:Label text="{i18n>role}" required="true"/>
+                <m:ComboBox id="idRoleInput" selectedKey="{dialog>/role}" width="100%">
+                    <core:Item key="Admin" text="Admin"/>
+                    <core:Item key="Employee" text="Employee"/>
+                </m:ComboBox>
+
+            </m:VBox>
+        </m:content>
+
+        <m:beginButton>
+            <m:Button text="{i18n>save}" press=".onSave"/>
+        </m:beginButton>
+
+        <m:endButton>
+            <m:Button text="{i18n>cancel}" press=".onCancel"/>
+        </m:endButton>
+
+    </m:Dialog>
+</core:FragmentDefinition>
